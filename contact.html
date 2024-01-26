@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+</head>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(2, 68, 48);
+    background-size: cover;
+  }
+  .contact .content{
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .contact .content p{
+    font-weight: 300;
+    color: #ffff;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: white;
+  }
+  .contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+  }
+  .contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span{
+    color: rgb(255, 208, 0);
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background-color:rgb(255, 208, 0) ;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  @media (max-width: 991px){
+    .contact{
+      padding: 50px;    
+    }
+    .container{
+      flex-direction: column;
+    }
+    .container .contactInfo{
+      margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+      width: 100%;
+    }
+  }
+  .footer {
+    background-color: rgb(2, 68, 48);
+    color: rgb(223, 223, 223);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+<body>
+  <section class="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>Thank you for considering reaching out to us! Whether you have questions about our products, need support, or want to provide valuable input, we welcome your communication. Feel free to use the contact form below, and our dedicated team will promptly respond to your message. </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><img src="images/location.png" alt="" style="width: 35px;">
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>NIMS Hospital, Opp to Bank of Maharashtra ,<br>
+                Thatte Nagar, Ganagapur Road, NASHIK 422005.</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><img src="images/call.png" alt="" style="width: 35px;">
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>(0253) 231 50 50<br>
+              +91 8888 545 000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><img src="images/mail.png" alt="" style="width: 35px;">
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>nimsnashik@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send">
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <section>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14995.878624317727!2d73.74539585978529!3d20.009788207414108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb9a72c404a7%3A0x629b48f1d380971e!2sNIMS%20Hospital-Best%20Multispeciality%20Hospital%20in%20Nashik%20%7C%20Best%20Pediatric%2C%20Psychiatry%2C%20Cosmetology%20%26%20ENT%20Hospital%2C%20Trauma%20Center!5e0!3m2!1sen!2sin!4v1705767055524!5m2!1sen!2sin" width="1220" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+      <p>&copy; 2024 NIMS hospital. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
